@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#131921">
+    <title>ShopNest - Modern E-Commerce</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <nav class="navbar">
+        <button class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </button>
+        
+        <div class="nav-logo">
+            <a href="#" class="logo">ShopNest</a>
+        </div>
+        
+        <div class="nav-search">
+            <select class="search-select">
+                <option>All</option>
+                <option>Electronics</option>
+                <option>Fashion</option>
+                <option>Home</option>
+                <option>Beauty</option>
+                <option>Sports</option>
+            </select>
+            <input type="text" class="search-input" placeholder="Search products...">
+            <button class="search-button">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+        
+        <div class="nav-items">
+            <div class="nav-item account-trigger">
+                <span class="item-line1">Hello, Sign in</span>
+                <span class="item-line2">Account & Lists</span>
+            </div>
+            <div class="nav-item">
+                <span class="item-line1">Returns</span>
+                <span class="item-line2">& Orders</span>
+            </div>
+            <div class="nav-item cart cart-trigger">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+                <span>Cart</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-header">
+            <h3>ShopNest Menu</h3>
+            <button class="mobile-menu-close">&times;</button>
+        </div>
+        <div class="mobile-menu-categories"></div>
+        <div class="mobile-menu-account">
+            <button class="btn btn-primary">Sign In</button>
+            <button class="btn btn-secondary">Register</button>
+        </div>
+    </div>
+
+    <!-- Account Dropdown -->
+    <div class="account-dropdown">
+        <h3>Your Account</h3>
+        <div class="account-options">
+            <button class="btn btn-secondary btn-signin">Sign In</button>
+            <button class="btn btn-primary btn-register">Create Account</button>
+        </div>
+        <div class="account-links">
+            <a href="#"><i class="fas fa-box"></i> Your Orders</a>
+            <a href="#"><i class="fas fa-heart"></i> Your Wish List</a>
+            <a href="#"><i class="fas fa-cog"></i> Account Settings</a>
+            <a href="#"><i class="fas fa-map-marker-alt"></i> Your Addresses</a>
+            <a href="#"><i class="fas fa-history"></i> Purchase History</a>
+        </div>
+    </div>
+
+    <!-- Cart Dropdown -->
+    <div class="cart-dropdown">
+        <div class="cart-header">
+            <h3>Your Shopping Cart</h3>
+            <span class="cart-item-count">0 items</span>
+        </div>
+        <div class="cart-items">
+            <div class="empty-cart">Your cart is empty</div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-subtotal">
+                <span>Subtotal:</span>
+                <span class="cart-total">$0.00</span>
+            </div>
+            <button class="btn btn-primary btn-checkout">Proceed to Checkout</button>
+            <button class="btn btn-secondary btn-view-cart">View Full Cart</button>
+        </div>
+    </div>
+
+    <!-- Secondary Navigation -->
+    <div class="subnav">
+        <div class="subnav-items">
+            <a href="#" class="subnav-item"><i class="fas fa-bars"></i> All Categories</a>
+            <a href="#" class="subnav-item">Today's Deals</a>
+            <a href="#" class="subnav-item">New Releases</a>
+            <a href="#" class="subnav-item">Customer Service</a>
+            <a href="#" class="subnav-item">Gift Cards</a>
+            <a href="#" class="subnav-item">Sell Products</a>
+        </div>
+        <div class="subnav-deals">
+            <i class="fas fa-bolt"></i> Limited Time Deals
+        </div>
+    </div>
+
+    <!-- Hero Banner with Multiple Slides -->
+    <div class="hero">
+        <div class="hero-slides">
+            <div class="slide active" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('assets/banners/summer-sale.jpg')">
+                <div class="slide-content">
+                    <h2 class="animate__animated animate__fadeInDown">Summer Sale Up to 50% Off</h2>
+                    <p class="animate__animated animate__fadeInUp">Limited time offer on selected items</p>
+                    <button class="btn-primary animate__animated animate__fadeIn">Shop Now</button>
+                </div>
+            </div>
+            <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('assets/banners/new-arrivals.jpg')">
+                <div class="slide-content">
+                    <h2>New Arrivals</h2>
+                    <p>Discover the latest trends</p>
+                    <button class="btn-primary">Explore</button>
+                </div>
+            </div>
+            <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('assets/banners/electronics.jpg')">
+                <div class="slide-content">
+                    <h2>Electronics Sale</h2>
+                    <p>Up to 30% off on gadgets</p>
+                    <button class="btn-primary">Shop Electronics</button>
+                </div>
+            </div>
+        </div>
+        <div class="slide-indicators">
+            <span class="indicator active"></span>
+            <span class="indicator"></span>
+            <span class="indicator"></span>
+        </div>
+        <button class="slide-nav prev"><i class="fas fa-chevron-left"></i></button>
+        <button class="slide-nav next"><i class="fas fa-chevron-right"></i></button>
+    </div>
+
+    <!-- Quick Access Tiles -->
+    <div class="quick-access">
+        <div class="quick-access-item">
+            <div class="quick-access-icon">
+                <i class="fas fa-shipping-fast"></i>
+            </div>
+            <div class="quick-access-text">
+                <h4>Free Shipping</h4>
+                <p>On orders over $50</p>
+            </div>
+        </div>
+        <div class="quick-access-item">
+            <div class="quick-access-icon">
+                <i class="fas fa-undo"></i>
+            </div>
+            <div class="quick-access-text">
+                <h4>Easy Returns</h4>
+                <p>30-day return policy</p>
+            </div>
+        </div>
+        <div class="quick-access-item">
+            <div class="quick-access-icon">
+                <i class="fas fa-lock"></i>
+            </div>
+            <div class="quick-access-text">
+                <h4>Secure Payment</h4>
+                <p>100% secure checkout</p>
+            </div>
+        </div>
+        <div class="quick-access-item">
+            <div class="quick-access-icon">
+                <i class="fas fa-headset"></i>
+            </div>
+            <div class="quick-access-text">
+                <h4>24/7 Support</h4>
+                <p>Dedicated support</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Categories Grid -->
+    <div class="categories">
+        <h2 class="section-title">Shop by Category</h2>
+        <div class="category-grid">
+            <!-- Dynamically loaded from script.js -->
+        </div>
+    </div>
+
+    <!-- Featured Products -->
+    <div class="featured-products">
+        <div class="section-header">
+            <h2 class="section-title">Featured Products</h2>
+            <a href="#" class="view-all">View All</a>
+        </div>
+        <div class="product-grid">
+            <!-- Dynamically loaded from script.js -->
+        </div>
+    </div>
+
+    <!-- Deals of the Day -->
+    <div class="deals">
+        <div class="section-header">
+            <div>
+                <h2 class="section-title">Deals of the Day</h2>
+                <div class="countdown">
+                    <span class="countdown-text">Ends in:</span>
+                    <span class="countdown-time">12:34:56</span>
+                </div>
+            </div>
+            <a href="#" class="view-all">View All Deals</a>
+        </div>
+        <div class="product-grid deals-grid">
+            <!-- Dynamically loaded from script.js -->
+        </div>
+    </div>
+
+    <!-- New Arrivals -->
+    <div class="new-arrivals">
+        <div class="section-header">
+            <h2 class="section-title">New Arrivals</h2>
+            <a href="#" class="view-all">View All</a>
+        </div>
+        <div class="product-grid">
+            <!-- Dynamically loaded from script.js -->
+        </div>
+    </div>
+
+    <!-- Top Rated Products -->
+    <div class="top-rated">
+        <div class="section-header">
+            <h2 class="section-title">Top Rated Products</h2>
+            <a href="#" class="view-all">View All</a>
+        </div>
+        <div class="product-grid">
+            <!-- Dynamically loaded from script.js -->
+        </div>
+    </div>
+
+    <!-- Newsletter Subscription -->
+    <div class="newsletter">
+        <div class="newsletter-content">
+            <h3>Subscribe to Our Newsletter</h3>
+            <p>Get the latest updates on new products and upcoming sales</p>
+            <div class="newsletter-form">
+                <input type="email" placeholder="Enter your email address">
+                <button class="btn btn-primary">Subscribe</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-section">
+                <h3>Get to Know Us</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press Releases</a></li>
+                    <li><a href="#">ShopNest Science</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Make Money with Us</h3>
+                <ul>
+                    <li><a href="#">Sell products</a></li>
+                    <li><a href="#">Become an Affiliate</a></li>
+                    <li><a href="#">Advertise Your Products</a></li>
+                    <li><a href="#">Self-Publish with Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Payment Products</h3>
+                <ul>
+                    <li><a href="#">Business Card</a></li>
+                    <li><a href="#">Shop with Points</a></li>
+                    <li><a href="#">Reload Your Balance</a></li>
+                    <li><a href="#">Currency Converter</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Let Us Help You</h3>
+                <ul>
+                    <li><a href="#">Your Account</a></li>
+                    <li><a href="#">Your Orders</a></li>
+                    <li><a href="#">Shipping Rates</a></li>
+                    <li><a href="#">Returns & Replacements</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-middle">
+            <div class="footer-logo">ShopNest</div>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-links">
+                <a href="#">Conditions of Use</a>
+                <a href="#">Privacy Notice</a>
+                <a href="#">Interest-Based Ads</a>
+                <a href="#">Terms of Sale</a>
+            </div>
+            <div class="footer-copy">© 2023 ShopNest.com, Inc. or its affiliates</div>
+        </div>
+    </footer>
+
+    <!-- Mobile Bottom Navigation -->
+    <div class="mobile-nav">
+        <a href="#" class="mobile-nav-item active">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </a>
+        <a href="#" class="mobile-nav-item">
+            <i class="fas fa-search"></i>
+            <span>Search</span>
+        </a>
+        <a href="#" class="mobile-nav-item">
+            <i class="fas fa-heart"></i>
+            <span>Wishlist</span>
+        </a>
+        <a href="#" class="mobile-nav-item">
+            <i class="fas fa-shopping-cart"></i>
+            <span>Cart</span>
+        </a>
+        <a href="#" class="mobile-nav-item">
+            <i class="fas fa-user"></i>
+            <span>Account</span>
+        </a>
+    </div>
+
+    <!-- Offline Notification -->
+    <div class="offline-notification">
+        <i class="fas fa-wifi"></i> You are currently offline. Some features may be limited.
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="products.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
